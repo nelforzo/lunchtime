@@ -54,8 +54,8 @@ ROOT_URLCONF = 'lunchtime.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [BASE_DIR / 'lunches' / 'templates'],  # Add the app's template directory
+        'APP_DIRS': True,  # Keep this to allow Django to look in app directories
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
