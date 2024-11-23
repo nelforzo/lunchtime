@@ -4,14 +4,14 @@ document.body.addEventListener('htmx:afterSwap', function(evt) {
 
         var inner_html = '';
         data.forEach(function(item) {
-            inner_html += '<div id="lunch_'+item.id+'">';
+            inner_html += '<div class="lunch_item" id="lunch_'+item.id+'">';
             inner_html += '<span>' + item.name + '</span> ';
             inner_html += '<span>' + item.price +'</span> ';
-            inner_html += '<span class="delete" '
+            inner_html += '<button class="outline" '
             +'hx-delete="/lunches/delete/'+item.id+'/" '
             +'hx-target="#delete_target" '
             +'hx-headers=\'{"X-CSRFToken": "' + document.querySelector('[name=csrfmiddlewaretoken]').value + '"}\' '
-            +'hx-trigger="click">delete</span>';
+            +'hx-trigger="click">delete</button>';
             inner_html += '</div>';
         });
         

@@ -1,7 +1,14 @@
-.read_target {
-    padding: 10px;
-    margin: 10px;
+body {
+    padding: 1rem;
 }
-.hidden {
-    display: none;
+.lunch_item {
+    margin-bottom: 1rem;
+}
+h1 {
+    --pico-font-family: Pacifico, cursive;
+    --pico-font-weight: 400;
+    --pico-typography-spacing-vertical: 0.5rem;
+}
+button {
+    --pico-font-weight: 700;
 }
