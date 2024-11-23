@@ -5,9 +5,9 @@ document.body.addEventListener('htmx:afterSwap', function(evt) {
         var inner_html = '';
         data.forEach(function(item) {
             inner_html += '<div class="lunch_item" id="lunch_'+item.id+'">';
-            inner_html += '<span>' + item.name + '</span> ';
-            inner_html += '<span>' + item.price +'</span> ';
-            inner_html += '<button class="outline" '
+            inner_html += '<span class="lunch_item_name">' + item.name + '</span> ';
+            inner_html += '<span class="lunch_item_price">' + item.price +'</span> ';
+            inner_html += '<button '
             +'hx-delete="/lunches/delete/'+item.id+'/" '
             +'hx-target="#delete_target" '
             +'hx-headers=\'{"X-CSRFToken": "' + document.querySelector('[name=csrfmiddlewaretoken]').value + '"}\' '
