@@ -11,6 +11,7 @@ body {
     background-color: var(--pico-secondary-background);
     padding: 0.5rem;
     border-radius: var(--pico-border-radius);
+    color: aliceblue;
 }
 .lunch_item:nth-child(odd) {
     padding: 0.5rem;
