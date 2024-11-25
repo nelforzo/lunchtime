@@ -32,7 +32,11 @@ h1 {
     --pico-font-family: Pacifico, cursive;
     --pico-font-weight: 400;
     --pico-typography-spacing-vertical: 0.5rem;
+    margin-bottom: 2rem;
 }
 button {
     font-size: smaller;
+    float: right;
+    padding: 6px 12px 6px 12px;
+    border-style: ridge;
 }
